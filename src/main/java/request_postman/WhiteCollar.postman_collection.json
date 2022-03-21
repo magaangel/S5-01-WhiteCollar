@@ -1,0 +1,623 @@
+{
+	"info": {
+		"_postman_id": "0e3cab9f-79bf-492d-b492-36db4307a509",
+		"name": "WhiteCollar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createShop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"Arte para ti\",\r\n\"storageCapacity\":\"100\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shops",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "createShop",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"Arte para ti\",\r\n\"storageCapacity\":\"100\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shops",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shops"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 21:45:06 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Arte para ti\",\n    \"storageCapacity\": 100,\n    \"pictures\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "crateShop2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Art Blue\",\r\n    \"storageCapacity\":\"50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shops",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "crateShop2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Art Blue\",\r\n    \"storageCapacity\":\"50\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shops",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shops"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 21:45:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"Art Blue\",\n    \"storageCapacity\": 50,\n    \"pictures\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "getShop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shops",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getShop",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shops",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shops"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 21:45:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Arte para ti\",\n        \"storageCapacity\": 100,\n        \"pictures\": []\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Art Blue\",\n        \"storageCapacity\": 50,\n        \"pictures\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "addPicture",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"El Azul del cielo\",\r\n    \"author\":\"Alonso\",\r\n    \"price\":\"600000\",\r\n    \"entryDate\":\"22-01-2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shops/1/pictures",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops",
+						"1",
+						"pictures"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addPicture",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"El Azul del cielo\",\r\n    \"author\":\"Alonso\",\r\n    \"price\":\"600000\",\r\n    \"entryDate\":\"22-01-2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shops/1/pictures",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shops",
+								"1",
+								"pictures"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 21:45:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"El Azul del cielo\",\n    \"author\": \"Alonso\",\n    \"price\": 600000,\n    \"entryDate\": \"22-01-2022\"\n}"
+				}
+			]
+		},
+		{
+			"name": "addPicture2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"El verde del campo\",\r\n    \"author\":\"Alonso\",\r\n    \"price\":\"600000\",\r\n    \"entryDate\":\"22-01-2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shops/1/pictures",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops",
+						"1",
+						"pictures"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addPicture2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"El verde del campo\",\r\n    \"author\":\"Alonso\",\r\n    \"price\":\"600000\",\r\n    \"entryDate\":\"22-01-2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shops/1/pictures",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shops",
+								"1",
+								"pictures"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 21:45:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"El verde del campo\",\n    \"author\": \"Alonso\",\n    \"price\": 600000,\n    \"entryDate\": \"22-01-2022\"\n}"
+				}
+			]
+		},
+		{
+			"name": "addPicture3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"El amarillo del Sol\",\r\n    \"author\":\"Rodriguez\",\r\n    \"price\":\"500000\",\r\n    \"entryDate\":\"25-01-2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shops/2/pictures",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops",
+						"2",
+						"pictures"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addPicture3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"El amarillo del Sol\",\r\n    \"author\":\"Rodriguez\",\r\n    \"price\":\"500000\",\r\n    \"entryDate\":\"25-01-2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shops/2/pictures",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shops",
+								"2",
+								"pictures"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 21:45:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"El amarillo del Sol\",\n    \"author\": \"Rodriguez\",\n    \"price\": 500000,\n    \"entryDate\": \"25-01-2022\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getPictures",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shops/2/pictures",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops",
+						"2",
+						"pictures"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getPictures",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shops/1/pictures",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shops",
+								"1",
+								"pictures"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 21:46:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"El Azul del cielo\",\n        \"author\": \"Alonso\",\n        \"price\": 600000,\n        \"entryDate\": \"22-01-2022\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"El verde del campo\",\n        \"author\": \"Alonso\",\n        \"price\": 600000,\n        \"entryDate\": \"22-01-2022\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "deleteAllPictures",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shops/2/pictures",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops",
+						"2",
+						"pictures"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteAllPictures",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shops/2/pictures",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shops",
+								"2",
+								"pictures"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 21:46:29 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Successfully deleted"
+				}
+			]
+		}
+	]
+}
